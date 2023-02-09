@@ -1,0 +1,244 @@
+/**index.wxss**/
+page {
+  background-color: #f5f5f5;
+}
+
+.cur-power {
+  width: 40%;
+  margin-left: 5%;
+  margin-top: 35rpx;
+  height: 350rpx;
+  background: #ffffff;
+  border-radius: 10rpx;
+  box-shadow: 10rpx 10rpx 10rpx #dcdcdc;
+  position: relative;
+}
+
+.cur-power-text {
+  position: absolute;
+  top: 20rpx;
+  left: 20rpx;
+  font-size: 48rpx;
+}
+
+.shape {
+  width: 200rpx;
+  height: 200rpx;
+  text-align: center;
+  line-height: 200rpx;
+  border-radius: 50%;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  top: 110rpx;
+  left: 50rpx;
+}
+
+.bottom {
+  position: absolute;
+  width: 170rpx;
+  height: 170rpx;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 8rpx solid #c0c3c2;
+  top: 6rpx;
+  left: 6rpx;
+}
+
+.cover {
+  position: absolute;
+  border-radius: 50%;
+  width: 158rpx;
+  height: 158rpx;
+  background-color: #FFF;
+  z-index: 10;
+  top: 20rpx;
+  left: 20rpx;
+  color: #000;
+  line-height: 158rpx;
+  font-size: 36rpx;
+}
+
+.ring-left {
+  position: absolute;
+  width: 100rpx;
+  height: 200rpx;
+  border-radius: 100rpx 0 0 100rpx;
+  background-color: #007afe;
+  transform-origin: right center;
+  transform: var(--transform);
+}
+
+.ring-right {
+  position: absolute;
+  width: 100rpx;
+  height: 200rpx;
+  border-radius: 0 100rpx 100rpx 0;
+  background-color: #007afe;
+  left: 100rpx;
+  transform-origin: left center;
+  transform: rotate(0deg);
+}
+
+.ring-hide {
+  position: absolute;
+  z-index: 9;
+  border-radius: 0 102rpx 102rpx 0;
+  width: 104rpx;
+  height: 204rpx;
+  background-color: #fff;
+  top: -2rpx;
+  left: 98rpx;
+  transform-origin: left center;
+  display: var(--display);
+  transform: rotate(0deg);
+}
+
+.ring-hide-child {
+  z-index: 10;
+  border-radius: 0 100rpx 100rpx 0;
+  width: 86rpx;
+  height: 170rpx;
+  background-color: transparent;
+  top: 8rpx;
+  left: 0rpx;
+  color: #000;
+  line-height: 170rpx;
+  position: absolute;
+  border: 8rpx solid #c0c3c2;
+  border-left: 0;
+}
+
+.cur-water {
+  width: 40%;
+  margin-left: 55%;
+  margin-top: -350rpx;
+  height: 350rpx;
+  background: #ffffff;
+  border-radius: 10rpx;
+  box-shadow: 10rpx 10rpx 10rpx #dcdcdc;
+  position: relative; 
+}
+
+.cur-water-text {
+  position: absolute;
+  top: 20rpx;
+  left: 20rpx;
+  font-size: 48rpx; 
+}
+
+.water-container {
+  position: absolute;
+  width: 50%;
+  height: 55%;
+  left: 25%;
+  top: 27%;
+  background-color: #ffffff;
+  border: 3rpx solid #000000;
+  box-shadow: 10rpx 10rpx 10rpx #dcdcdc;
+}
+
+.water {
+  position: absolute;
+  width: 50%;
+  height: var(--height);
+  left: 25%;
+  bottom: 18%;
+  background-color: #007afe;
+}
+
+.water-info {
+  position: absolute;
+  bottom: 3%;
+  left: 40%;
+}
+.water-info-text {
+  font-size: 36rpx; 
+}
+.evi {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 55rpx;
+  height: 350rpx;
+  background: #007afe;
+  border-radius: 10rpx;
+  box-shadow: 10rpx 10rpx 10rpx #dcdcdc;
+  position: relative;  
+}
+.evi-pm {
+  position: absolute;
+  top: 60rpx;
+  left: 20rpx;
+  color: #ffffff;
+}
+.evi-youhai {
+  position: absolute;
+  top: 159rpx;
+  left: 20rpx;
+  color: #ffffff;
+}
+.evi-co2 {
+  position: absolute;
+  bottom: 60rpx;
+  left: 20rpx;
+  color: #ffffff;
+}
+.evi-quality {
+  position: absolute;
+  right: 60rpx;
+  top: 60rpx;
+  color: #ffffff;
+}
+.evi-aqi {
+  position: absolute;
+  top: 120rpx;
+  right: 80rpx;
+  font-size: 80rpx;
+  color: #ffffff;
+}
+.evi-msg {
+  position: absolute;
+  bottom: 60rpx;
+  right: 20rpx;
+  color: #ffffff;
+}
+
+.cur-temp {
+  width: 40%;
+  margin-left: 5%;
+  margin-top: 55rpx;
+  height: 350rpx;
+  background: #ffffff;
+  border-radius: 10rpx;
+  box-shadow: 10rpx 10rpx 10rpx #dcdcdc;
+  position: relative;  
+}
+.cur-temp-text {
+  position: absolute;
+  top: 20rpx;
+  left: 20rpx;
+  font-size: 48rpx; 
+}
+.cur-temp-value {
+  position: absolute;
+  top: 105rpx;
+  left: 20rpx;
+  font-size: 100rpx; 
+  color: #007afe;
+}
+.cur-temp-msg {
+  position: absolute;
+  top: 235rpx;
+  left: 20rpx;
+  width: 80%;
+}
+.cur-light {
+  width: 40%;
+  margin-left: 55%;
+  margin-top: -350rpx;
+  height: 350rpx;
+  background: #ffffff;
+  border-radius: 10rpx;
+  box-shadow: 10rpx 10rpx 10rpx #dcdcdc;
+  position: relative; 
+}

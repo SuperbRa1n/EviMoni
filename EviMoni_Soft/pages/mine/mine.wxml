@@ -1,0 +1,75 @@
+<view class="userinfo">
+  <button class="avatar-wrapper" bindtap="toChooseAvatar" style="background-color: #f5f5f5;">
+    <image class="avatar" src="{{avatarUrl}}"></image>
+  </button> 
+  <text class="weui-input">{{nickName}}</text>
+</view>
+<view class="popup-box"  bindtap="closePopup" wx:if="{{ isChanging }}"></view> 
+<view class="change-info" wx:if="{{ isChanging }}">
+  <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+    <image class="avatar" src="{{avatarUrl}}"></image>
+  </button> 
+  <input type="nickname" class="weui-input-2" placeholder="请输入昵称" bindconfirm="getNickName"/>
+</view>
+
+<view class="mycup">
+  <text style="font-size: 32rpx; margin-left: 20rpx;">我的水杯</text>
+</view>
+
+<view class="device-info" bindtap="addDevice">
+  <image src="https://img3.vipshop.com/upload/merchandise/49062/ARSTO-6934091464486-1-1.jpg" class="cup-img"/>
+  <text class="device-name">{{deviceName}}</text>
+  <view class="device-new">
+    <image src="../../assets/add.png" class="add-icon"/>
+    <text class="add-text">添加设备</text>
+  </view>
+</view>
+
+<view class="popup-box"  bindtap="closePopup" wx:if="{{ isAdding }}"></view> 
+<view class="info-center" wx:if="{{ isAdding }}">
+  <text class="line-1">添加设备</text>
+  <text class="line-2" wx:if="{{ atStep==1 }}">1. 将水杯开机放在旁边;</text>
+  <text class="line-3" wx:if="{{ atStep==1 }}">2. 开启您的设备的无线局域网;</text>
+  <text class="line-4" wx:if="{{ atStep==1 }}">3. 找到名为"ESP8266"的WiFi并连接；</text>
+  <text class="line-5" wx:if="{{ atStep==1 }}">4. 待您的水杯屏幕上显示出"ip"和"端口"字样时，点击"下一步".</text>
+  <view class="next-step" bindtap="nextStep" wx:if="{{ atStep==1 || atStep==2 }}">
+    <text class="next-text">下一步</text>
+    <image src="../../assets/rightarrow.png" class="next-img"/>
+  </view>    
+  <view wx:if="{{ atStep==2 }}">
+    <text class="line-2">请输入您设备上显示的ip：</text>
+    <input class="ip-input" maxlength="15" placeholder="" bindconfirm="getIp"/>
+    <text class="line-4">请输入您设备上显示的端口：</text>
+    <input class="port-input" maxlength="5" placeholder="" 	bindconfirm="getPort"/>
+    <text class="line-6">待您的水杯屏幕上显示"手机已连接"字样时，点击“下一步”</text>
+  </view>
+  <view wx:if="{{ atStep==3 }}">
+    <text class="line-2">请输入您手机热点的名称：</text>
+    <input class="ip-input" maxlength="15" placeholder="" bindconfirm="getSSID"/>
+    <text class="line-4">请输入您手机热点的密码：</text>
+    <input class="port-input" maxlength="20" placeholder="" password type="text"	bindconfirm="getPWD"/>
+    <text class="line-6">待您的水杯屏幕上显示"水杯已连接"字样时，点击“完成”</text>
+  </view>
+  <view class="finish" wx:if="{{ atStep==3 }}" bindtap="closePopup">
+    <text class="finish-text">完成</text>
+  </view>
+</view>
+
+<view class="setting">
+  <text style="font-size: 32rpx; margin-left: 20rpx;">我的企业</text>
+</view>
+
+<view class="setting-info">
+  <view class="my-enterprise-1">
+    <text class="enterprise-text">企业周边环境</text>
+    <image src="../../assets/right.png" class="info-img"/>
+  </view>
+  <view class="my-enterprise-2">
+    <text class="enterprise-text">企业喝水量排行榜</text>
+    <image src="../../assets/right.png" class="info-img"/>
+  </view>
+  <view class="my-enterprise-3">
+    <text class="enterprise-text">企业节能排行榜</text>
+    <image src="../../assets/right.png" class="info-img"/>
+  </view>
+</view>

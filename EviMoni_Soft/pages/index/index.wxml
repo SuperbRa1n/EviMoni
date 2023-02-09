@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<view class="cur-power">
+  <text class="cur-power-text">当前电量：</text>
+  <view class="shape">
+    <view class="bottom"></view>
+    <view class="cover">{{curPower}}%</view>
+    <view class="ring-left" style="--transform:{{'rotate('+ (-((curPower<50) ? ((50 - curPower)/50 * 180) : ((50 - (curPower - 50))/50 * 180))) +'deg)'}}"></view>
+    <view class="ring-right"></view>
+    <view class="ring-hide" style="--display:{{(curPower<50) ? 'inherit' : 'none'}}" ><view class="ring-hide-child"></view></view>
+  </view>
+</view>
+
+<view class="cur-water">
+  <text class="cur-water-text">当前水量：</text>
+  <view class="water-container"></view>
+  <view class="water" style="--height:{{ curWater/100*55+'%' }}"></view>
+  <view class="water-info">
+    <text class="water-info-text">{{ curWater }}%</text>  
+  </view>
+</view>
+
+<view class="evi">
+  <text class="evi-pm">PM2.5：{{PM}}</text>
+  <text class="evi-youhai">有害气体：{{youhai}}</text>
+  <text class="evi-co2">CO2浓度：{{CO2}}</text>
+  <text class="evi-quality">空气质量-{{quality}}</text>
+  <text class="evi-aqi">{{aqi}}</text>
+  <text class="evi-msg">{{mess}}</text>
+</view>
+
+<view class="cur-temp">
+  <text class="cur-temp-text">当前水温：</text>
+  <text class="cur-temp-value">{{curTemp}}℃</text>
+  <text class="cur-temp-msg">{{tmpMess}}</text>
+</view>
+
+<view class="cur-light">
+  <text class="cur-temp-text">当前光强：</text>
+  <text class="cur-temp-value">{{curLight}}</text>
+  <text class="cur-temp-msg">{{lightMess}}</text> 
+</view>
