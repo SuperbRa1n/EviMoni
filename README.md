@@ -8,7 +8,8 @@ EviMoni项目组节能减排项目
 * 目前硬件部分传感器和ESP8266尚未做MX配置的适配，其中冲突保留在了分支`zhl`中
 ## 传感器部分
 * IO口使用情况如下图
-![](https://cdn.jsdelivr.net/gh/SuperbRa1n/ImageLib/io.png)
+
+  ![](https://cdn.jsdelivr.net/gh/SuperbRa1n/ImageLib/io.png)
 * 各外设使用情况
   * GPIO: 
     * PA6——GP2Y1014AU的LED灯
@@ -26,7 +27,8 @@ EviMoni项目组节能减排项目
     用于控制精确的微秒级计时
 ## ESP8266部分
 * IO口使用情况如下图
-![](https://cdn.jsdelivr.net/gh/SuperbRa1n/ImageLib/1280X1280.PNG)
+
+  ![](https://cdn.jsdelivr.net/gh/SuperbRa1n/ImageLib/1280X1280.PNG)
 * 各外设使用情况
   * PC14:esp8266使能
   * USART2:eps8266通信
