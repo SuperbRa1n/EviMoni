@@ -33,18 +33,29 @@ extern "C" {
 /* USER CODE END Includes */
 
 extern UART_HandleTypeDef huart1;
+<<<<<<< HEAD
 
 extern UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN Private defines */
 #define USART_DEBUG		&huart1
+=======
+extern UART_HandleTypeDef huart2;
+
+/* USER CODE BEGIN Private defines */
+
+>>>>>>> 92956dcdca0283fbcfeaefc9c62cd579612e16a2
 /* USER CODE END Private defines */
 
 void MX_USART1_UART_Init(void);
 void MX_USART2_UART_Init(void);
 
 /* USER CODE BEGIN Prototypes */
+<<<<<<< HEAD
 void UsartPrintf(UART_HandleTypeDef *huart, char *fmt,...);
+=======
+
+>>>>>>> 92956dcdca0283fbcfeaefc9c62cd579612e16a2
 /* USER CODE END Prototypes */
 
 #ifdef __cplusplus

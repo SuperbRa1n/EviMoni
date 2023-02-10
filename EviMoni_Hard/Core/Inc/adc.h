@@ -1,9 +1,9 @@
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
-  * @file    spi.h
+  * @file    adc.h
   * @brief   This file contains all the function prototypes for
-  *          the spi.c file
+  *          the adc.c file
   ******************************************************************************
   * @attention
   *
@@ -18,8 +18,8 @@
   */
 /* USER CODE END Header */
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __SPI_H__
-#define __SPI_H__
+#ifndef __ADC_H__
+#define __ADC_H__
 
 #ifdef __cplusplus
 extern "C" {
@@ -32,21 +32,15 @@ extern "C" {
 
 /* USER CODE END Includes */
 
-<<<<<<< HEAD
-extern SPI_HandleTypeDef hspi2;
-=======
-extern SPI_HandleTypeDef hspi1;
->>>>>>> 92956dcdca0283fbcfeaefc9c62cd579612e16a2
+extern ADC_HandleTypeDef hadc1;
+extern ADC_HandleTypeDef hadc2;
 
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
 
-<<<<<<< HEAD
-void MX_SPI2_Init(void);
-=======
-void MX_SPI1_Init(void);
->>>>>>> 92956dcdca0283fbcfeaefc9c62cd579612e16a2
+void MX_ADC1_Init(void);
+void MX_ADC2_Init(void);
 
 /* USER CODE BEGIN Prototypes */
 
@@ -56,5 +50,5 @@ void MX_SPI1_Init(void);
 }
 #endif
 
-#endif /* __SPI_H__ */
+#endif /* __ADC_H__ */
 

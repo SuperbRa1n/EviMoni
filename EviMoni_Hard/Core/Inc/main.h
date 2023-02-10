@@ -65,6 +65,7 @@ void Error_Handler(void);
 #define LED_GPIO_Port GPIOA
 #define ECHO_Pin GPIO_PIN_6
 #define ECHO_GPIO_Port GPIOB
+<<<<<<< HEAD
 #define esp8266_Pin GPIO_PIN_14
 #define esp8266_GPIO_Port GPIOC
 #define DISP_RST_Pin GPIO_PIN_0
@@ -73,6 +74,8 @@ void Error_Handler(void);
 #define DISP_CS_GPIO_Port GPIOB
 #define DISP_DC_Pin GPIO_PIN_2
 #define DISP_DC_GPIO_Port GPIOB
+=======
+>>>>>>> 92956dcdca0283fbcfeaefc9c62cd579612e16a2
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

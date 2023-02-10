@@ -32,15 +32,25 @@ extern "C" {
 
 /* USER CODE END Includes */
 
+<<<<<<< HEAD
 extern TIM_HandleTypeDef htim2;
+=======
+extern TIM_HandleTypeDef htim1;
+extern TIM_HandleTypeDef htim4;
+>>>>>>> 92956dcdca0283fbcfeaefc9c62cd579612e16a2
 
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
 
+<<<<<<< HEAD
 void MX_TIM2_Init(void);
 
 void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
+=======
+void MX_TIM1_Init(void);
+void MX_TIM4_Init(void);
+>>>>>>> 92956dcdca0283fbcfeaefc9c62cd579612e16a2
 
 /* USER CODE BEGIN Prototypes */
 

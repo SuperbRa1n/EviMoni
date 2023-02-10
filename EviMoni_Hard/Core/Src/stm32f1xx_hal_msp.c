@@ -83,3 +83,7 @@ void HAL_MspInit(void)
 /* USER CODE BEGIN 1 */
 
 /* USER CODE END 1 */
+<<<<<<< HEAD
+=======
+
+>>>>>>> 92956dcdca0283fbcfeaefc9c62cd579612e16a2

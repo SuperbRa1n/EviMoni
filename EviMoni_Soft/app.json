@@ -1,0 +1,34 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/mine/mine"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#007AFE",
+    "navigationBarTitleText": "EviMoni",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#007afe",
+    "backgroundColor": "#dcdcdc",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/home.png",
+        "selectedIconPath": "assets/s_home.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "assets/mine.png",
+        "selectedIconPath": "assets/s_mine.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

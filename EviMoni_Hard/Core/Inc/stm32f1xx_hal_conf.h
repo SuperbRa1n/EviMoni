@@ -34,7 +34,11 @@
   */
 
 #define HAL_MODULE_ENABLED
+<<<<<<< HEAD
   /*#define HAL_ADC_MODULE_ENABLED   */
+=======
+  #define HAL_ADC_MODULE_ENABLED
+>>>>>>> 92956dcdca0283fbcfeaefc9c62cd579612e16a2
 /*#define HAL_CRYP_MODULE_ENABLED   */
 /*#define HAL_CAN_MODULE_ENABLED   */
 /*#define HAL_CAN_LEGACY_MODULE_ENABLED   */
@@ -42,11 +46,19 @@
 /*#define HAL_CORTEX_MODULE_ENABLED   */
 /*#define HAL_CRC_MODULE_ENABLED   */
 /*#define HAL_DAC_MODULE_ENABLED   */
+<<<<<<< HEAD
 /*#define HAL_DMA_MODULE_ENABLED   */
 /*#define HAL_ETH_MODULE_ENABLED   */
 /*#define HAL_FLASH_MODULE_ENABLED   */
 #define HAL_GPIO_MODULE_ENABLED
 /*#define HAL_I2C_MODULE_ENABLED   */
+=======
+#define HAL_DMA_MODULE_ENABLED
+/*#define HAL_ETH_MODULE_ENABLED   */
+/*#define HAL_FLASH_MODULE_ENABLED   */
+#define HAL_GPIO_MODULE_ENABLED
+#define HAL_I2C_MODULE_ENABLED
+>>>>>>> 92956dcdca0283fbcfeaefc9c62cd579612e16a2
 /*#define HAL_I2S_MODULE_ENABLED   */
 /*#define HAL_IRDA_MODULE_ENABLED   */
 /*#define HAL_IWDG_MODULE_ENABLED   */
